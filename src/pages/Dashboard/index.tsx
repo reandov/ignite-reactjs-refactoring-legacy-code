@@ -18,7 +18,7 @@ interface FoodProps {
   price: string;
 }
 
-export default function Dashboard() {
+export function Dashboard() {
   const [foods, setFoods] = useState<FoodProps[]>([]);
   const [editingFood, setEditingFood] = useState({} as FoodProps);
   const [isModalOpen, setIsModalOpen] = useState(false);
